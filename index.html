@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="media.css"> -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo"><a href="#">LOGOSITE</a></div>
+        <div>
+          <ul class="menu">
+            <li><a href="#">INFO</a></li>
+            <li><a href="#">HOTEL ROOMS</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="lang">            
+            <li><a href="#">NL</a></li>
+            <li><a href="#">EN</a></li>
+            <li><a href="#">FR</a></li>
+            <li><a href="#">DE</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="Welcome">
+        <div class="text-part">
+          <h2>Welcome to hotel</h2>
+          <p>Welcome to the Recour Hotel, a romantic luxury hotel
+            with its own town garden, peacefully located at a mere
+            100 metres from Poperinge town market square, the
+            heart of hop country.</p>
+            <button>MORE INFO</button>
+        </div>
+        <div class="selection-part">
+          <div>
+            <label for="arrival">Arrival</label>
+            <input type="date" name="arrival" id="arrival">
+          </div>
+          <div>
+            <label for="departure">Departure</label>
+            <input type="date" name="departure" id="departure">
+          </div>
+          <div class="guests">
+            <label for="guests">Number of guests</label>
+              <select name="number-of-guests" id="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="more-than-10">More that 10 guests</option>
+              </select>
+          </div>
+        </div>
+      </section>
+      <section class="featured-chambers">
+        <div class="h2-and-button">
+          <div>
+            <h2>Featured chambers</h2>
+          </div>
+          <div>
+            <button class="screen-btn">VIEW ALL CHAMBERS</button>
+          </div>
+        </div>
+        <div class="all-chambers">
+          <div class="chamber">
+            <div class="image-1 chamber-image"></div>
+            <div class="description">
+              <h3>Melpomene Superior Luxury</h3>
+              <p>This is the muse of tragedy and she has all the trappings to underpin her position: thyrus staff, dagger, the mask of tragedy and cothurnus boots are all part of her permanent outfit.</p>
+            </div> 
+            <div class="view-chamber"><a href="#">VIEW CHAMBER</a></div>
+          </div>
+          <div class="chamber">
+            <div class="image-2 chamber-image"></div>
+            <div class="description">
+              <h3>Breuer Superior Luxury</h3>
+              <p>See how a hotel room becomes a delightful place of indulgence for duos!</p>
+              
+            </div>
+            <div class="view-chamber"><a href="#">VIEW CHAMBER</a></div>
+          </div>
+          <div class="chamber">
+            <div class="image-3 chamber-image"></div>
+            <div class="description">
+              <h3>Baron Henri</h3>
+              <p>A room filled with light and the atmosphere of the Westhoek</p>
+            </div>
+            <div class="view-chamber"><a href="#">VIEW CHAMBER</a></div>
+          </div>
+        </div>
+        <div>
+          <button class="mobile-btn">VIEW ALL CHAMBERS</button>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="slider-field"></div>
+      </section>
+      <section class="impressions-and-reviews">
+        <section class="impressions">
+          <h2>Impression</h2>
+          <div class="gallery">
+            <div class="impress-img im-1"></div>
+            <div class="impress-img im-2"></div>
+            <div class="impress-img im-3"></div>
+            <div class="impress-img im-4"></div>
+          </div>
+        </section>
+        <section class="reviews">
+          <h2>Reviews</h2>
+          <div class="review">
+            <div class="user-rating">
+              <div class="rating"></div>
+              <h5>Yuki Iida</h5>
+            </div>
+            <p>We enjoyed our staying the hotel</p>
+            <div class="border"></div>
+          </div>
+          <div class="review">
+            <div class="user-rating">
+              <div class="rating"></div>
+              <h5>De Cupere Peter</h5>
+            </div>
+            <p>Fantastisch hotel! Super verzorgde kamers, heerlijk divers ontbijt met streekkazen en ander lekkers. Heel Vriendelijk onthaal. Beste ligging in Poperinge. Parking vlak bij het hotel. Probeer hun designkamers! Gewoonweg heerlijk!!!!</p>
+            <div class="border"></div>
+          </div>
+          <div class="review">
+            <div class="user-rating">
+              <div class="rating"></div>
+              <h5>Eva Schouppe</h5>
+            </div>
+            <p>Wij hebben er van genoten. Kamer super alsook het ontbijt was super.</p>
+            <div class="border"></div>
+          </div>
+          <div class="review">
+            <div class="user-rating">
+              <div class="rating"></div>
+              <h5>Yuki Iida</h5>
+            </div>
+            <p>We enjoyed our staying the hotel</p>
+            <div class="border"></div>
+          </div>
+          <button class="review-button">ALL REVIEWS</button>
+        </section>
+      </section>
+      <!-- Map -->
+      <footer>
+        <p>© Hotel 2026 - Guido Gezellestraat 7 B8970 Poperinge - Terms of use</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
