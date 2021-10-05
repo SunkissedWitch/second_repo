@@ -1,0 +1,89 @@
+.btn.btn-default {
+  background-color: #6b6161;
+  color: #f7f4f3;
+}
+main p,
+main h2,
+main h3, 
+main h4,
+main h5,
+label,
+.featured-chambers a {
+  color: #514b62;
+}
+
+.navigation {
+  background-color: rgba(172, 164, 164, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navigation a{
+  color: #f7f4f3;
+}
+
+.featured-chambers {
+  background-color: #ede3da;
+}
+.chamber {
+  background-color: #d9d0ca;
+}
+
+/* gallery */
+
+.gallery {
+  max-width: 600px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.impressions-and-reviews {
+  background-color: #ede3da;
+}
+.impressions {
+  background-color: #f7f4f3
+}
+
+.impress-img {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 260px;
+  width: 260px;
+}
+
+@media (max-width: 768px) {
+  .impress-img {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width: 220px;
+  }  
+}
+@media (max-width: 1200px) {
+  .gallery {
+    justify-content: center;
+  }
+}
+
+.im-1 {background-image: url(img/im-1.jpeg);}
+.im-2 {background-image: url(img/im-2.jpg);}
+.im-3 {background-image: url(img/im-3.jpg);}
+.im-4 {background-image: url(img/im-4.png);}
+
+.rating svg {
+  color: #c3ad45;
+}
+.my-border {
+  border: 1px solid #aca4a4;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #ede3da;
+}
