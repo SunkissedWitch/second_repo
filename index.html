@@ -5,170 +5,308 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="media.css"> -->
   </head>
   <body>
     <header>
-      <nav>
-        <div id="logo"><a href="#">LOGOSITE</a></div>
-        <div>
-          <ul class="menu">
-            <li><a href="#">INFO</a></li>
-            <li><a href="#">HOTEL ROOMS</a></li>
-            <li><a href="#">REVIEWS</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul class="lang">            
-            <li><a href="#">NL</a></li>
-            <li><a href="#">EN</a></li>
-            <li><a href="#">FR</a></li>
-            <li><a href="#">DE</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand col-3 row justify-content-end" href="#">LOGOSITE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav col-6">
+              <a class="nav-link active" aria-current="page" href="#">INFO</a>
+              <a class="nav-link" href="#">HOTEL ROOMS</a>
+              <a class="nav-link" href="#">REVIEWS</a>
+              <a class="nav-link" href="#">CONTACT</a>
+            </div>
+            <div class="navbar-nav col-3">
+              <a class="nav-link" href="#">NL</a>
+              <a class="nav-link active" href="#">EN</a>
+              <a class="nav-link" href="#">FR</a>
+              <a class="nav-link" href="#">DE</a>
+            </div>
+          </div>
         </div>
       </nav>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="hotel room">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100" alt="hotel room">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.jpeg" class="d-block w-100" alt="hotel room">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header>
     <main>
       <section class="Welcome">
-        <div class="text-part">
-          <h2>Welcome to hotel</h2>
-          <p>Welcome to the Recour Hotel, a romantic luxury hotel
-            with its own town garden, peacefully located at a mere
-            100 metres from Poperinge town market square, the
-            heart of hop country.</p>
-            <button>MORE INFO</button>
-        </div>
-        <div class="selection-part">
-          <div>
-            <label for="arrival">Arrival</label>
-            <input type="date" name="arrival" id="arrival">
-          </div>
-          <div>
-            <label for="departure">Departure</label>
-            <input type="date" name="departure" id="departure">
-          </div>
-          <div class="guests">
-            <label for="guests">Number of guests</label>
-              <select name="number-of-guests" id="guests">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="more-than-10">More that 10 guests</option>
-              </select>
+        <div class="py-3 py-lg-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-sm-12 text-part text-xl-start text-center">
+                <h2>Welcome to hotel</h2>
+                <p class="lead text-xl-start text-center">Welcome to the Recour Hotel, a romantic luxury hotel
+                  with its own town garden, peacefully located at a mere
+                  100 metres from Poperinge town market square, the
+                  heart of hop country.</p>
+                <button class="btn btn-default my-2">MORE INFO</button>              
+              </div>
+              <div class="col-xl-6 col-sm-12 my-4 selection-part">
+                <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                    <label class="form-label" for="arrival">Arrival</label>
+                    <input class="form-control" type="date" name="arrival" id="arrival">
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                    <label class="form-label" for="departure">Departure</label>
+                    <input class="form-control" type="date" name="departure" id="departure">
+                  </div>
+                  <div class="guests col-sm-12 col-md-4">
+                    <label class="form-label" for="guests">Number of guests</label>
+                      <select class="form-control" name="number-of-guests" id="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="more-than-10">More that 10 guests</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="featured-chambers">
-        <div class="h2-and-button">
-          <div>
-            <h2>Featured chambers</h2>
+        <div class="container py-3 py-lg-5">
+          <div class="d-flex flex-row justify-content-between h2-and-button">
+              <h2>Featured chambers</h2>
+              <button class="btn btn-default d-none d-md-block">VIEW ALL CHAMBERS</button>
           </div>
-          <div>
-            <button class="screen-btn">VIEW ALL CHAMBERS</button>
-          </div>
-        </div>
-        <div class="all-chambers">
-          <div class="chamber">
-            <div class="image-1 chamber-image"></div>
-            <div class="description">
-              <h3>Melpomene Superior Luxury</h3>
-              <p>This is the muse of tragedy and she has all the trappings to underpin her position: thyrus staff, dagger, the mask of tragedy and cothurnus boots are all part of her permanent outfit.</p>
-            </div> 
-            <div class="view-chamber"><a href="#">VIEW CHAMBER</a></div>
-          </div>
-          <div class="chamber">
-            <div class="image-2 chamber-image"></div>
-            <div class="description">
-              <h3>Breuer Superior Luxury</h3>
-              <p>See how a hotel room becomes a delightful place of indulgence for duos!</p>
-              
+          <div class="row py-md-3 all-chambers">
+            <div class="col-sm-12 col-md-4 mb-4">
+              <div class="card h-100 chamber" style="">
+                <!-- <div class="image-1 chamber-image"></div> -->
+                <img src="img/slide1.jpg" class="card-img-top" alt="room">
+                <div class="card-body description">
+                  <h3 class="card-title">Melpomene Superior Luxury</h3>
+                  <p class="card-text">This is the muse of tragedy and she has all the trappings to underpin her position: thyrus staff, dagger, the mask of tragedy and cothurnus boots are all part of her permanent outfit.</p>
+                </div> 
+                <div class="view-chamber text-end d-block py-2 px-2"><a href="#" class="card-link">VIEW CHAMBER</a></div>
+              </div>
             </div>
-            <div class="view-chamber"><a href="#">VIEW CHAMBER</a></div>
-          </div>
-          <div class="chamber">
-            <div class="image-3 chamber-image"></div>
-            <div class="description">
-              <h3>Baron Henri</h3>
-              <p>A room filled with light and the atmosphere of the Westhoek</p>
+            <div class="col-md-4 col-sm-12 mb-4">
+              <div class="card h-100 chamber" style="">
+                <!-- <div class="image-2 chamber-image"></div> -->
+                <img src="img/slide2.jpg" class="card-img-top" alt="room">
+                <div class="card-body description">
+                  <h3 class="card-title">Breuer Superior Luxury</h3>
+                  <p class="card-text">See how a hotel room becomes a delightful place of indulgence for duos!</p>
+                </div>
+                <div class="view-chamber text-end d-block py-2 px-2"><a href="#" class="card-link">VIEW CHAMBER</a></div>
+              </div>
             </div>
-            <div class="view-chamber"><a href="#">VIEW CHAMBER</a></div>
+            <div class="col-md-4 col-sm-12 mb-4">
+              <div class="card h-100 chamber" style="">
+                <!-- <div class="image-3 chamber-image"></div> -->
+                <img src="img/slide1.jpg" class="card-img-top" alt="room">
+                <div class="card-body description">
+                  <h3 class="card-title">Baron Henri</h3>
+                  <p class="card-text">A room filled with light and the atmosphere of the Westhoek</p>
+                </div>
+                <div class="view-chamber text-end d-block py-2 px-2"><a href="#" class="card-link">VIEW CHAMBER</a></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <button class="mobile-btn">VIEW ALL CHAMBERS</button>
+          <div class="d-none d-sm-block d-md-none">
+            <button class="btn btn-default">VIEW ALL CHAMBERS</button>
+          </div>
         </div>
       </section>
       <section class="slider">
-        <div class="slider-field"></div>
+        <div class="slider-field">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide2.jpg" class="d-block w-100" alt="hotel room">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide3.jpeg" class="d-block w-100" alt="hotel room">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="hotel room">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="impressions-and-reviews">
-        <section class="impressions">
-          <h2>Impression</h2>
-          <div class="gallery">
-            <div class="impress-img im-1"></div>
-            <div class="impress-img im-2"></div>
-            <div class="impress-img im-3"></div>
-            <div class="impress-img im-4"></div>
-          </div>
-        </section>
-        <section class="reviews">
-          <h2>Reviews</h2>
-          <div class="review">
-            <div class="user-rating">
-              <div class="rating"></div>
-              <h5>Yuki Iida</h5>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-8 col-sm-12 py-4 py-lg-5 ps-xl-5 text-center text-xl-start impressions">
+              <h2>Impression</h2>
+              <div class="py-3 py-xl-5 gallery">
+                  <div class="impress-img im-1"></div>
+                  <div class="impress-img im-2"></div>
+                  <div class="impress-img im-3"></div>
+                  <div class="impress-img im-4"></div>
+              </div>
             </div>
-            <p>We enjoyed our staying the hotel</p>
-            <div class="border"></div>
-          </div>
-          <div class="review">
-            <div class="user-rating">
-              <div class="rating"></div>
-              <h5>De Cupere Peter</h5>
+            <div class="col-xl-4 col-sm-12 py-4 py-lg-5 pe-xl-5 px-5 reviews">
+              <h2 class="text-center text-xl-start">Reviews</h2>
+              <div class="py-3 py-xl-5 all-reviews">
+                <div class="review">
+                  <div class="d-flex flex-row flex-xl-column justify-content-between user-rating">
+                    <div class="order-1 rating">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="order-0">Yuki Iida</h5> 
+                    </div>
+                  </div>
+                  <p>We enjoyed our staying the hotel</p>
+                  <div class="my-border"></div>
+                </div>
+                <div class="review">
+                  <div class="d-flex flex-row flex-xl-column justify-content-between user-rating">
+                    <div class="order-1 rating">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="order-0">De Cupere Peter</h5> 
+                    </div>
+                  </div>
+                  <p>Fantastisch hotel! Super verzorgde kamers, heerlijk divers ontbijt met streekkazen en ander lekkers. Heel Vriendelijk onthaal. Beste ligging in Poperinge. Parking vlak bij het hotel. Probeer hun designkamers! Gewoonweg heerlijk!!!!</p>
+                  <div class="my-border"></div>
+                </div>
+                <div class="review">
+                  <div class="d-flex flex-row flex-xl-column justify-content-between user-rating">
+                    <div class="order-1 rating">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="order-0">Eva Schouppe</h5>
+                    </div>
+                  </div>
+                  <p>Wij hebben er van genoten. Kamer super alsook het ontbijt was super.</p>
+                  <div class="my-border"></div>
+                </div>
+                <div class="review">
+                  <div class="d-flex flex-row flex-xl-column justify-content-between user-rating">
+                    <div class="order-1 rating">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="order-0">Yuki Iida</h5>
+                    </div>
+                  </div>
+                  <p>We enjoyed our staying the hotel</p>
+                  <div class="my-border"></div>
+                </div>                
+              </div>
+              <div class="py-3 text-center text-xl-start"><button class="btn btn-default review-button">ALL REVIEWS</button></div>
             </div>
-            <p>Fantastisch hotel! Super verzorgde kamers, heerlijk divers ontbijt met streekkazen en ander lekkers. Heel Vriendelijk onthaal. Beste ligging in Poperinge. Parking vlak bij het hotel. Probeer hun designkamers! Gewoonweg heerlijk!!!!</p>
-            <div class="border"></div>
           </div>
-          <div class="review">
-            <div class="user-rating">
-              <div class="rating"></div>
-              <h5>Eva Schouppe</h5>
-            </div>
-            <p>Wij hebben er van genoten. Kamer super alsook het ontbijt was super.</p>
-            <div class="border"></div>
-          </div>
-          <div class="review">
-            <div class="user-rating">
-              <div class="rating"></div>
-              <h5>Yuki Iida</h5>
-            </div>
-            <p>We enjoyed our staying the hotel</p>
-            <div class="border"></div>
-          </div>
-          <button class="review-button">ALL REVIEWS</button>
-        </section>
+        </div>
       </section>
       <!-- Map -->
-      <footer>
-        <p>© Hotel 2026 - Guido Gezellestraat 7 B8970 Poperinge - Terms of use</p>
+      <footer class="py-3">
+        <p class="text-center text-muted">© Hotel 2026 - Guido Gezellestraat 7 B8970 Poperinge - Terms of use</p>
       </footer>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
