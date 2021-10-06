@@ -37,6 +37,9 @@ label,
   height: 60px;
   background-color: #aca4a4;
   }
+  .selection-part label {
+    border-right: 2px solid #c0b8b8;
+  }
 }
 @media only screen 
 and (min-device-width: 768px) 
