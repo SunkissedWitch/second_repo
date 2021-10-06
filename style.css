@@ -1,3 +1,7 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
 .btn.btn-default {
   background-color: #6b6161;
   color: #f7f4f3;
@@ -13,7 +17,7 @@ label,
 }
 
 .navigation {
-  background-color: rgba(172, 164, 164, 0.4);
+  background-color: rgba(107, 97, 97, 0.4);
   position: absolute;
   top: 0;
   right: 0;
@@ -23,6 +27,50 @@ label,
 
 .navigation a{
   color: #f7f4f3;
+}
+.Welcome {
+  background-color: #f7f4f3;
+}
+
+@media (max-width: 767px) {
+  .inp-field {
+  height: 60px;
+  background-color: #aca4a4;
+  }
+}
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1199px) {
+  .inp-field input,
+  .inp-field select {
+    min-height: 120px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .inp-field input,
+  .inp-field select {
+    min-height: 180px;
+    text-align: center;
+  }
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.inp-field input,
+.inp-field select {
+  background-color: #aca4a4;
+  border: none;
+  color: #f7f4f3;
+  cursor: pointer;
 }
 
 .featured-chambers {
